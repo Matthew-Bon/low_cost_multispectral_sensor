@@ -559,10 +559,6 @@ Wire Wire Line
 	6320 2880 6450 2880
 Connection ~ 6320 3130
 Wire Wire Line
-	6130 2980 6450 2980
-Text Label 6130 2980 2    50   ~ 0
-RST
-Wire Wire Line
 	6450 2580 6130 2580
 Wire Wire Line
 	6450 2730 6130 2730
@@ -816,49 +812,49 @@ Multispectral Sensor
 $Comp
 L Connector_Generic:Conn_01x06 J4
 U 1 1 5DBB8346
-P 10560 1040
-F 0 "J4" H 10510 1340 50  0000 L CNN
-F 1 "Programming Header" V 10660 680 50  0000 L CNN
-F 2 "" H 10560 1040 50  0001 C CNN
-F 3 "~" H 10560 1040 50  0001 C CNN
-	1    10560 1040
+P 10870 1020
+F 0 "J4" H 10820 1320 50  0000 L CNN
+F 1 "Programming Header" V 10970 660 50  0000 L CNN
+F 2 "" H 10870 1020 50  0001 C CNN
+F 3 "~" H 10870 1020 50  0001 C CNN
+	1    10870 1020
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10360 840  10160 840 
+	10670 820  10470 820 
 Wire Wire Line
-	10360 940  10160 940 
+	10670 920  10470 920 
 Wire Wire Line
-	10360 1040 10160 1040
+	10670 1020 10470 1020
 Wire Wire Line
-	10360 1140 10160 1140
+	10670 1120 10470 1120
 Wire Wire Line
-	10360 1240 10160 1240
+	10670 1220 10470 1220
 Wire Wire Line
-	10360 1340 10160 1340
-Text Label 10160 840  2    50   ~ 0
+	10670 1320 10470 1320
+Text Label 10470 820  2    50   ~ 0
 3.3V
-Text Label 10160 940  2    50   ~ 0
+Text Label 10470 920  2    50   ~ 0
 CS
-Text Label 10160 1040 2    50   ~ 0
+Text Label 10470 1020 2    50   ~ 0
 MISO
-Text Label 10160 1140 2    50   ~ 0
+Text Label 10470 1120 2    50   ~ 0
 MOSI
-Text Label 10160 1240 2    50   ~ 0
+Text Label 10470 1220 2    50   ~ 0
 SCK
 $Comp
 L power:GND #PWR?
 U 1 1 5DBD40C6
-P 10160 1410
-F 0 "#PWR?" H 10160 1160 50  0001 C CNN
-F 1 "GND" H 10165 1237 50  0000 C CNN
-F 2 "" H 10160 1410 50  0001 C CNN
-F 3 "" H 10160 1410 50  0001 C CNN
-	1    10160 1410
+P 10470 1390
+F 0 "#PWR?" H 10470 1140 50  0001 C CNN
+F 1 "GND" H 10475 1217 50  0000 C CNN
+F 2 "" H 10470 1390 50  0001 C CNN
+F 3 "" H 10470 1390 50  0001 C CNN
+	1    10470 1390
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10160 1410 10160 1340
+	10470 1390 10470 1320
 Text Label 8520 2720 0    50   ~ 0
 CS
 Text Label 8580 2820 0    50   ~ 0
@@ -867,4 +863,57 @@ Text Label 8630 2920 0    50   ~ 0
 MOSI
 Text Label 8700 3020 0    50   ~ 0
 SCK
+Text Label 6130 2980 2    50   ~ 0
+AS_RST
+$Comp
+L crystals:R R11
+U 1 1 5DBE7102
+P 5730 2630
+F 0 "R11" H 5770 2640 50  0000 L CNN
+F 1 "10K" V 5730 2570 50  0000 L CNN
+F 2 "" V 5660 2630 50  0001 C CNN
+F 3 "" H 5730 2630 50  0001 C CNN
+	1    5730 2630
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5730 2480 5730 2260
+Text Label 5730 2260 0    50   ~ 0
+3.3V
+Wire Wire Line
+	5730 2780 5730 2980
+Wire Wire Line
+	5730 2980 6450 2980
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5DC05F15
+P 10870 1760
+F 0 "J5" H 10830 1850 50  0000 L CNN
+F 1 "RST Header" V 10970 1600 50  0000 L CNN
+F 2 "" H 10870 1760 50  0001 C CNN
+F 3 "~" H 10870 1760 50  0001 C CNN
+	1    10870 1760
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC1017A
+P 10470 1920
+F 0 "#PWR?" H 10470 1670 50  0001 C CNN
+F 1 "GND" H 10475 1747 50  0000 C CNN
+F 2 "" H 10470 1920 50  0001 C CNN
+F 3 "" H 10470 1920 50  0001 C CNN
+	1    10470 1920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10470 1920 10470 1860
+Wire Wire Line
+	10470 1860 10670 1860
+Wire Wire Line
+	10670 1760 10470 1760
+Text Label 10470 1760 2    50   ~ 0
+AS_RST
+Text Notes 8980 1810 0    50   ~ 0
+AS726x reset needs to be held\nin reset during programming 
 $EndSCHEMATC
