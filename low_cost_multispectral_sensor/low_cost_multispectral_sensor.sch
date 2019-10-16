@@ -1,0 +1,870 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:MIC5219-3.3YMM U2
+U 1 1 5DA6445E
+P 1810 4930
+F 0 "U2" H 1810 5272 50  0000 C CNN
+F 1 "MIC5219-3.3YMM" H 1810 5181 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1810 5255 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC5219-500mA-Peak-Output-LDO-Regulator-DS20006021A.pdf" H 1810 4930 50  0001 C CNN
+	1    1810 4930
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1510 4930 1330 4930
+Wire Wire Line
+	1330 4930 1330 4830
+Wire Wire Line
+	1330 4830 1510 4830
+Wire Wire Line
+	1330 4830 1150 4830
+Connection ~ 1330 4830
+Text Label 700  4830 2    50   ~ 0
+5V
+$Comp
+L crystals:C C1
+U 1 1 5DA65A18
+P 1150 5080
+F 0 "C1" H 1265 5126 50  0000 L CNN
+F 1 "C" H 1265 5035 50  0000 L CNN
+F 2 "" H 1188 4930 50  0001 C CNN
+F 3 "" H 1150 5080 50  0001 C CNN
+	1    1150 5080
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA660C2
+P 1150 5340
+F 0 "#PWR?" H 1150 5090 50  0001 C CNN
+F 1 "GND" H 1155 5167 50  0000 C CNN
+F 2 "" H 1150 5340 50  0001 C CNN
+F 3 "" H 1150 5340 50  0001 C CNN
+	1    1150 5340
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:C C2
+U 1 1 5DA66655
+P 2200 5100
+F 0 "C2" H 2315 5146 50  0000 L CNN
+F 1 "C" H 2315 5055 50  0000 L CNN
+F 2 "" H 2238 4950 50  0001 C CNN
+F 3 "" H 2200 5100 50  0001 C CNN
+	1    2200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA6727C
+P 1810 5320
+F 0 "#PWR?" H 1810 5070 50  0001 C CNN
+F 1 "GND" H 1815 5147 50  0000 C CNN
+F 2 "" H 1810 5320 50  0001 C CNN
+F 3 "" H 1810 5320 50  0001 C CNN
+	1    1810 5320
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA676AB
+P 2200 5320
+F 0 "#PWR?" H 2200 5070 50  0001 C CNN
+F 1 "GND" H 2205 5147 50  0000 C CNN
+F 2 "" H 2200 5320 50  0001 C CNN
+F 3 "" H 2200 5320 50  0001 C CNN
+	1    2200 5320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4930 1150 4830
+Connection ~ 1150 4830
+Wire Wire Line
+	1810 5320 1810 5230
+Wire Wire Line
+	2200 5320 2200 5290
+Wire Wire Line
+	2200 4950 2200 4930
+Wire Wire Line
+	2200 4930 2110 4930
+Wire Wire Line
+	2110 4830 2500 4830
+Text Label 2590 4830 0    50   ~ 0
+3.3V
+Wire Wire Line
+	1150 5230 1150 5310
+Connection ~ 780  2760
+Wire Wire Line
+	730  2760 730  2590
+Wire Wire Line
+	780  2760 730  2760
+Wire Wire Line
+	780  2760 830  2760
+Wire Wire Line
+	830  2760 830  2590
+Wire Wire Line
+	780  2760 780  2770
+$Comp
+L power:GND #PWR?
+U 1 1 5DA5ABEE
+P 780 2770
+F 0 "#PWR?" H 780 2520 50  0001 C CNN
+F 1 "GND" H 785 2597 50  0000 C CNN
+F 2 "" H 780 2770 50  0001 C CNN
+F 3 "" H 780 2770 50  0001 C CNN
+	1    780  2770
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5DA5463A
+P 830 2190
+F 0 "J1" H 887 2657 50  0000 C CNN
+F 1 "USB_B_Micro" H 887 2566 50  0000 C CNN
+F 2 "" H 980 2140 50  0001 C CNN
+F 3 "~" H 980 2140 50  0001 C CNN
+	1    830  2190
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1130 1990 1320 1990
+Text Label 1320 1990 0    50   ~ 0
+5V
+Text Notes 1560 4440 0    177  ~ 0
+LDO
+Text Label 4370 3650 2    50   ~ 0
+GP3
+Text Label 4370 3550 2    50   ~ 0
+GP2
+Text Label 4370 3450 2    50   ~ 0
+GP1
+Text Label 4370 3350 2    50   ~ 0
+GP0
+Wire Wire Line
+	3660 2790 4100 2790
+Wire Wire Line
+	3660 2690 4100 2690
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5DA9F833
+P 4920 3450
+F 0 "J2" H 4870 3650 50  0000 L CNN
+F 1 "GPIO Conn" V 5020 3220 50  0000 L CNN
+F 2 "" H 4920 3450 50  0001 C CNN
+F 3 "~" H 4920 3450 50  0001 C CNN
+	1    4920 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4720 3650 4370 3650
+Wire Wire Line
+	4720 3550 4370 3550
+Wire Wire Line
+	4720 3450 4370 3450
+Wire Wire Line
+	4720 3350 4370 3350
+Text Label 4100 2790 0    50   ~ 0
+GP3
+Text Label 4100 2690 0    50   ~ 0
+GP2
+Wire Notes Line
+	2910 5600 2910 4000
+Text Notes 1770 1260 0    197  ~ 0
+USB Front End\n
+Wire Wire Line
+	4850 2590 4850 2010
+Wire Wire Line
+	3660 2590 4850 2590
+Wire Wire Line
+	4440 2490 4440 2010
+Wire Wire Line
+	3660 2490 4440 2490
+Text Label 4650 640  0    50   ~ 0
+3.3V
+Wire Wire Line
+	4650 760  4850 760 
+Connection ~ 4650 760 
+Wire Wire Line
+	4650 760  4650 640 
+Wire Wire Line
+	4440 760  4650 760 
+Wire Wire Line
+	4850 760  4850 830 
+Wire Wire Line
+	4440 830  4440 760 
+Wire Wire Line
+	4850 1330 4850 1230
+Wire Wire Line
+	4440 1340 4440 1230
+Wire Wire Line
+	4850 1710 4850 1630
+Wire Wire Line
+	4440 1640 4440 1710
+$Comp
+L crystals:LED D2
+U 1 1 5DA81816
+P 4850 1860
+F 0 "D2" V 4889 1743 50  0000 R CNN
+F 1 "LED" V 4798 1743 50  0000 R CNN
+F 2 "" H 4850 1860 50  0001 C CNN
+F 3 "" H 4850 1860 50  0001 C CNN
+	1    4850 1860
+	0    -1   -1   0   
+$EndComp
+$Comp
+L crystals:LED D1
+U 1 1 5DA80D56
+P 4440 1860
+F 0 "D1" V 4479 1743 50  0000 R CNN
+F 1 "LED" V 4388 1743 50  0000 R CNN
+F 2 "" H 4440 1860 50  0001 C CNN
+F 3 "" H 4440 1860 50  0001 C CNN
+	1    4440 1860
+	0    -1   -1   0   
+$EndComp
+$Comp
+L crystals:R R4
+U 1 1 5DA804DD
+P 4850 1480
+F 0 "R4" H 4920 1526 50  0000 L CNN
+F 1 "R" V 4850 1450 50  0000 L CNN
+F 2 "" V 4780 1480 50  0001 C CNN
+F 3 "" H 4850 1480 50  0001 C CNN
+	1    4850 1480
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:R R3
+U 1 1 5DA80097
+P 4440 1490
+F 0 "R3" H 4510 1536 50  0000 L CNN
+F 1 "R" V 4440 1460 50  0000 L CNN
+F 2 "" V 4370 1490 50  0001 C CNN
+F 3 "" H 4440 1490 50  0001 C CNN
+	1    4440 1490
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 5DA7F921
+P 4850 1030
+F 0 "JP2" V 4804 1128 50  0000 L CNN
+F 1 "N/A" V 4895 1128 50  0000 L CNN
+F 2 "" H 4850 1030 50  0001 C CNN
+F 3 "~" H 4850 1030 50  0001 C CNN
+	1    4850 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5DA7EFC1
+P 4440 1030
+F 0 "JP1" V 4394 1128 50  0000 L CNN
+F 1 "N/A" V 4485 1128 50  0000 L CNN
+F 2 "" H 4440 1030 50  0001 C CNN
+F 3 "~" H 4440 1030 50  0001 C CNN
+	1    4440 1030
+	0    1    1    0   
+$EndComp
+Text Label 4110 2290 0    50   ~ 0
+RX
+Text Label 4110 2190 0    50   ~ 0
+TX
+Wire Wire Line
+	3660 2290 4110 2290
+Wire Wire Line
+	3660 2190 4110 2190
+Wire Wire Line
+	2510 1890 2320 1890
+Text Label 2320 1890 2    50   ~ 0
+5V
+Text Label 2320 2040 2    50   ~ 0
+VUSB
+Wire Wire Line
+	2510 2040 2320 2040
+Text Label 3290 3210 0    50   ~ 0
+VUSB
+Text Label 2820 3220 0    50   ~ 0
+5V
+Wire Wire Line
+	2820 3320 2820 3220
+Wire Wire Line
+	3290 3320 3290 3210
+Wire Wire Line
+	3290 3700 3290 3620
+Wire Wire Line
+	2820 3620 2820 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5DA76DBB
+P 3290 3700
+F 0 "#PWR?" H 3290 3450 50  0001 C CNN
+F 1 "GND" H 3295 3527 50  0000 C CNN
+F 2 "" H 3290 3700 50  0001 C CNN
+F 3 "" H 3290 3700 50  0001 C CNN
+	1    3290 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA76940
+P 2820 3700
+F 0 "#PWR?" H 2820 3450 50  0001 C CNN
+F 1 "GND" H 2825 3527 50  0000 C CNN
+F 2 "" H 2820 3700 50  0001 C CNN
+F 3 "" H 2820 3700 50  0001 C CNN
+	1    2820 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:C C4
+U 1 1 5DA75CEC
+P 3290 3470
+F 0 "C4" H 3405 3516 50  0000 L CNN
+F 1 "C" H 3405 3425 50  0000 L CNN
+F 2 "" H 3328 3320 50  0001 C CNN
+F 3 "" H 3290 3470 50  0001 C CNN
+	1    3290 3470
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:C C3
+U 1 1 5DA75480
+P 2820 3470
+F 0 "C3" H 2935 3516 50  0000 L CNN
+F 1 "C" H 2935 3425 50  0000 L CNN
+F 2 "" H 2858 3320 50  0001 C CNN
+F 3 "" H 2820 3470 50  0001 C CNN
+	1    2820 3470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2470 2960 2470 2870
+Wire Wire Line
+	2470 2790 2510 2790
+$Comp
+L power:GND #PWR?
+U 1 1 5DA57510
+P 2470 2960
+F 0 "#PWR?" H 2470 2710 50  0001 C CNN
+F 1 "GND" H 2475 2787 50  0000 C CNN
+F 2 "" H 2470 2960 50  0001 C CNN
+F 3 "" H 2470 2960 50  0001 C CNN
+	1    2470 2960
+	1    0    0    -1  
+$EndComp
+$Comp
+L Microchip_misc:MCP2221 U1
+U 1 1 5DA56239
+P 2710 1790
+F 0 "U1" H 3085 1955 50  0000 C CNN
+F 1 "MCP2221" H 3085 1864 50  0000 C CNN
+F 2 "" H 2710 1790 50  0001 C CNN
+F 3 "" H 2710 1790 50  0001 C CNN
+	1    2710 1790
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1470 3420 1470 3330
+$Comp
+L Power_Protection:TPD2EUSB30 U3
+U 1 1 5DAA957E
+P 1470 2930
+F 0 "U3" H 1240 2640 50  0000 L CNN
+F 1 "TPD2EUSB30" H 1240 3180 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:Texas_DRT-3" H 720 2630 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf" H 1470 2930 50  0001 C CNN
+	1    1470 2930
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DABA85A
+P 1470 3420
+F 0 "#PWR?" H 1470 3170 50  0001 C CNN
+F 1 "GND" H 1475 3247 50  0000 C CNN
+F 2 "" H 1470 3420 50  0001 C CNN
+F 3 "" H 1470 3420 50  0001 C CNN
+	1    1470 3420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1070 2930 1070 2510
+Wire Wire Line
+	1870 2930 1870 2510
+Wire Wire Line
+	1070 2510 1340 2510
+Wire Wire Line
+	1340 2190 1760 2190
+Wire Wire Line
+	1130 2190 1340 2190
+Connection ~ 1340 2190
+Wire Wire Line
+	1340 2510 1340 2190
+Wire Wire Line
+	1520 2290 1760 2290
+Wire Wire Line
+	1130 2290 1520 2290
+Connection ~ 1520 2290
+Wire Wire Line
+	1520 2510 1520 2290
+Wire Wire Line
+	1870 2510 1520 2510
+$Comp
+L crystals:R R2
+U 1 1 5DA57D58
+P 1910 2290
+F 0 "R2" V 1990 2290 50  0000 C CNN
+F 1 "22" V 1910 2290 50  0000 C CNN
+F 2 "" V 1840 2290 50  0001 C CNN
+F 3 "" H 1910 2290 50  0001 C CNN
+	1    1910 2290
+	0    1    1    0   
+$EndComp
+$Comp
+L crystals:R R1
+U 1 1 5DA577A5
+P 1910 2190
+F 0 "R1" V 1830 2190 50  0000 C CNN
+F 1 "22" V 1910 2190 50  0000 C CNN
+F 2 "" V 1840 2190 50  0001 C CNN
+F 3 "" H 1910 2190 50  0001 C CNN
+	1    1910 2190
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2060 2190 2510 2190
+Wire Wire Line
+	2510 2290 2060 2290
+Wire Notes Line
+	5160 460  5160 4000
+$Comp
+L crystals:C C5
+U 1 1 5DAFCA31
+P 2280 2640
+F 0 "C5" H 2395 2686 50  0000 L CNN
+F 1 "C" H 2395 2595 50  0000 L CNN
+F 2 "" H 2318 2490 50  0001 C CNN
+F 3 "" H 2280 2640 50  0001 C CNN
+	1    2280 2640
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2470 2870 2280 2870
+Connection ~ 2470 2870
+Wire Wire Line
+	2470 2870 2470 2790
+Wire Wire Line
+	2280 2790 2280 2870
+Wire Wire Line
+	2280 2490 2510 2490
+Wire Wire Line
+	2280 2490 2160 2490
+Connection ~ 2280 2490
+Text Label 2160 2490 2    50   ~ 0
+RST
+$Comp
+L Device:D_TVS D3
+U 1 1 5DB0AA27
+P 880 5050
+F 0 "D3" V 840 4820 50  0000 L CNN
+F 1 "D_TVS" V 920 4750 50  0000 L CNN
+F 2 "" H 880 5050 50  0001 C CNN
+F 3 "~" H 880 5050 50  0001 C CNN
+	1    880  5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 5310 880  5310
+Wire Wire Line
+	880  5310 880  5200
+Connection ~ 1150 5310
+Wire Wire Line
+	1150 5310 1150 5340
+Wire Wire Line
+	880  4900 880  4830
+Wire Wire Line
+	880  4830 1150 4830
+Wire Wire Line
+	880  4830 700  4830
+Connection ~ 880  4830
+$Comp
+L crystals:D_Zener D4
+U 1 1 5DB0FE95
+P 2500 5100
+F 0 "D4" V 2454 5179 50  0000 L CNN
+F 1 "D_Zener" V 2545 5179 50  0000 L CNN
+F 2 "" H 2500 5100 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Zener_diode" H 2500 5100 50  0001 C CNN
+	1    2500 5100
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	470  5600 2910 5600
+Wire Wire Line
+	2200 5290 2500 5290
+Wire Wire Line
+	2500 5290 2500 5250
+Connection ~ 2200 5290
+Wire Wire Line
+	2200 5290 2200 5250
+Wire Wire Line
+	2500 4950 2500 4830
+Connection ~ 2500 4830
+Wire Wire Line
+	2500 4830 2590 4830
+$Comp
+L AMS:AS726x U5
+U 1 1 5DB18200
+P 6650 2230
+F 0 "U5" H 7025 2395 50  0000 C CNN
+F 1 "AS726x" H 7025 2304 50  0000 C CNN
+F 2 "" H 6650 2230 50  0001 C CNN
+F 3 "" H 6650 2230 50  0001 C CNN
+	1    6650 2230
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB1B51B
+P 6320 3240
+F 0 "#PWR?" H 6320 2990 50  0001 C CNN
+F 1 "GND" H 6325 3067 50  0000 C CNN
+F 2 "" H 6320 3240 50  0001 C CNN
+F 3 "" H 6320 3240 50  0001 C CNN
+	1    6320 3240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6320 3240 6320 3130
+Wire Wire Line
+	6320 3130 6450 3130
+Wire Wire Line
+	6320 3130 6320 2880
+Wire Wire Line
+	6320 2880 6450 2880
+Connection ~ 6320 3130
+Wire Wire Line
+	6130 2980 6450 2980
+Text Label 6130 2980 2    50   ~ 0
+RST
+Wire Wire Line
+	6450 2580 6130 2580
+Wire Wire Line
+	6450 2730 6130 2730
+Text Label 6130 2580 2    50   ~ 0
+TX
+Text Label 6130 2730 2    50   ~ 0
+RX
+Wire Wire Line
+	6450 2330 6240 2330
+Wire Wire Line
+	6240 2330 6240 2210
+Text Label 6240 2210 2    50   ~ 0
+3.3V
+$Comp
+L misc:AT25SF041 U7
+U 1 1 5DB19E4C
+P 9010 2620
+F 0 "U7" H 9260 2845 50  0000 C CNN
+F 1 "AT25SF041" H 9260 2754 50  0000 C CNN
+F 2 "" H 9010 2620 50  0001 C CNN
+F 3 "" H 9010 2620 50  0001 C CNN
+	1    9010 2620
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB2FE29
+P 8770 3230
+F 0 "#PWR?" H 8770 2980 50  0001 C CNN
+F 1 "GND" H 8775 3057 50  0000 C CNN
+F 2 "" H 8770 3230 50  0001 C CNN
+F 3 "" H 8770 3230 50  0001 C CNN
+	1    8770 3230
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8770 3230 8770 3120
+Wire Wire Line
+	8770 3120 8810 3120
+Wire Wire Line
+	8700 3130 8700 3020
+Wire Wire Line
+	8700 3020 8810 3020
+Wire Wire Line
+	8630 3030 8630 2920
+Wire Wire Line
+	8630 2920 8810 2920
+Wire Wire Line
+	8580 2930 8580 2820
+Wire Wire Line
+	8580 2820 8810 2820
+Wire Wire Line
+	8520 2830 8520 2720
+Wire Wire Line
+	8520 2720 8810 2720
+Wire Wire Line
+	8810 2620 8640 2620
+Text Label 8640 2620 2    50   ~ 0
+3.3V
+Wire Wire Line
+	7600 2830 8520 2830
+Wire Wire Line
+	7600 2930 8580 2930
+Wire Wire Line
+	7600 3030 8630 3030
+Wire Wire Line
+	7600 3130 8700 3130
+$Comp
+L crystals:R R7
+U 1 1 5DB5238D
+P 8210 1520
+F 0 "R7" H 8260 1560 50  0000 L CNN
+F 1 "R" V 8210 1500 50  0000 L CNN
+F 2 "" V 8140 1520 50  0001 C CNN
+F 3 "" H 8210 1520 50  0001 C CNN
+	1    8210 1520
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:R R8
+U 1 1 5DB52B6C
+P 8420 1520
+F 0 "R8" H 8490 1566 50  0000 L CNN
+F 1 "R" V 8420 1500 50  0000 L CNN
+F 2 "" V 8350 1520 50  0001 C CNN
+F 3 "" H 8420 1520 50  0001 C CNN
+	1    8420 1520
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:D D5
+U 1 1 5DB53154
+P 7680 1890
+F 0 "D5" V 7726 1811 50  0000 R CNN
+F 1 "D" V 7635 1811 50  0000 R CNN
+F 2 "" H 7680 1890 50  0001 C CNN
+F 3 "" H 7680 1890 50  0001 C CNN
+	1    7680 1890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L crystals:D D6
+U 1 1 5DB53AF3
+P 7920 1890
+F 0 "D6" V 7966 1811 50  0000 R CNN
+F 1 "D" V 7875 1811 50  0000 R CNN
+F 2 "" H 7920 1890 50  0001 C CNN
+F 3 "" H 7920 1890 50  0001 C CNN
+	1    7920 1890
+	0    -1   -1   0   
+$EndComp
+$Comp
+L crystals:R R5
+U 1 1 5DB53D29
+P 7680 1520
+F 0 "R5" H 7750 1566 50  0000 L CNN
+F 1 "R" V 7680 1500 50  0000 L CNN
+F 2 "" V 7610 1520 50  0001 C CNN
+F 3 "" H 7680 1520 50  0001 C CNN
+	1    7680 1520
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystals:R R6
+U 1 1 5DB5DD2F
+P 7920 1520
+F 0 "R6" H 7990 1566 50  0000 L CNN
+F 1 "R" V 7920 1500 50  0000 L CNN
+F 2 "" V 7850 1520 50  0001 C CNN
+F 3 "" H 7920 1520 50  0001 C CNN
+	1    7920 1520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7680 1260 7920 1260
+Wire Wire Line
+	8420 1260 8420 1370
+Wire Wire Line
+	7680 1260 7680 1370
+Wire Wire Line
+	7920 1370 7920 1260
+Connection ~ 7920 1260
+Wire Wire Line
+	8210 1370 8210 1260
+Wire Wire Line
+	7920 1260 8070 1260
+Connection ~ 8210 1260
+Wire Wire Line
+	8210 1260 8420 1260
+Wire Wire Line
+	8070 1260 8070 1190
+Connection ~ 8070 1260
+Wire Wire Line
+	8070 1260 8210 1260
+Text Label 8070 1190 0    50   ~ 0
+3.3V
+Wire Wire Line
+	7600 2330 7680 2330
+Wire Wire Line
+	7680 2330 7680 2040
+Wire Wire Line
+	7600 2430 7920 2430
+Wire Wire Line
+	7920 2430 7920 2040
+Wire Wire Line
+	7680 1740 7680 1670
+Wire Wire Line
+	7920 1740 7920 1670
+Wire Wire Line
+	7600 2630 8210 2630
+Wire Wire Line
+	8210 2630 8210 1670
+Wire Wire Line
+	7600 2730 8420 2730
+Wire Wire Line
+	8420 2730 8420 1670
+$Comp
+L crystals:R R9
+U 1 1 5DB8B971
+P 9840 2390
+F 0 "R9" H 9910 2436 50  0000 L CNN
+F 1 "R" V 9840 2360 50  0000 L CNN
+F 2 "" V 9770 2390 50  0001 C CNN
+F 3 "" H 9840 2390 50  0001 C CNN
+	1    9840 2390
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9710 2720 9840 2720
+Wire Wire Line
+	9840 2720 9840 2540
+Wire Wire Line
+	9710 2820 10060 2820
+Wire Wire Line
+	10060 2820 10060 2540
+Wire Wire Line
+	9840 2240 9840 2150
+Wire Wire Line
+	9840 2150 9960 2150
+Wire Wire Line
+	10060 2150 10060 2240
+Wire Wire Line
+	9960 2150 9960 2070
+Connection ~ 9960 2150
+Wire Wire Line
+	9960 2150 10060 2150
+$Comp
+L crystals:R R10
+U 1 1 5DB8BE98
+P 10060 2390
+F 0 "R10" H 10130 2436 50  0000 L CNN
+F 1 "R" V 10060 2370 50  0000 L CNN
+F 2 "" V 9990 2390 50  0001 C CNN
+F 3 "" H 10060 2390 50  0001 C CNN
+	1    10060 2390
+	1    0    0    -1  
+$EndComp
+Text Label 9960 2070 0    50   ~ 0
+3.3V
+$Comp
+L Jumper:Jumper_2_Open JP3
+U 1 1 5DB9B93C
+P 10060 3070
+F 0 "JP3" V 10000 2880 50  0000 L CNN
+F 1 "N/A" V 10090 2880 50  0000 L CNN
+F 2 "" H 10060 3070 50  0001 C CNN
+F 3 "~" H 10060 3070 50  0001 C CNN
+	1    10060 3070
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB9CED0
+P 10060 3370
+F 0 "#PWR?" H 10060 3120 50  0001 C CNN
+F 1 "GND" H 10065 3197 50  0000 C CNN
+F 2 "" H 10060 3370 50  0001 C CNN
+F 3 "" H 10060 3370 50  0001 C CNN
+	1    10060 3370
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10060 2870 10060 2820
+Connection ~ 10060 2820
+Wire Wire Line
+	10060 3370 10060 3270
+Wire Notes Line
+	470  4000 11220 4000
+Text Notes 6580 980  0    197  ~ 0
+Multispectral Sensor
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5DBB8346
+P 10560 1040
+F 0 "J4" H 10510 1340 50  0000 L CNN
+F 1 "Programming Header" V 10660 680 50  0000 L CNN
+F 2 "" H 10560 1040 50  0001 C CNN
+F 3 "~" H 10560 1040 50  0001 C CNN
+	1    10560 1040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10360 840  10160 840 
+Wire Wire Line
+	10360 940  10160 940 
+Wire Wire Line
+	10360 1040 10160 1040
+Wire Wire Line
+	10360 1140 10160 1140
+Wire Wire Line
+	10360 1240 10160 1240
+Wire Wire Line
+	10360 1340 10160 1340
+Text Label 10160 840  2    50   ~ 0
+3.3V
+Text Label 10160 940  2    50   ~ 0
+CS
+Text Label 10160 1040 2    50   ~ 0
+MISO
+Text Label 10160 1140 2    50   ~ 0
+MOSI
+Text Label 10160 1240 2    50   ~ 0
+SCK
+$Comp
+L power:GND #PWR?
+U 1 1 5DBD40C6
+P 10160 1410
+F 0 "#PWR?" H 10160 1160 50  0001 C CNN
+F 1 "GND" H 10165 1237 50  0000 C CNN
+F 2 "" H 10160 1410 50  0001 C CNN
+F 3 "" H 10160 1410 50  0001 C CNN
+	1    10160 1410
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10160 1410 10160 1340
+Text Label 8520 2720 0    50   ~ 0
+CS
+Text Label 8580 2820 0    50   ~ 0
+MISO
+Text Label 8630 2920 0    50   ~ 0
+MOSI
+Text Label 8700 3020 0    50   ~ 0
+SCK
+$EndSCHEMATC
