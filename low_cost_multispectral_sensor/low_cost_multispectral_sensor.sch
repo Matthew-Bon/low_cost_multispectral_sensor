@@ -1079,47 +1079,47 @@ Connection ~ 9520 930
 Wire Wire Line
 	9520 930  9570 930 
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole_Pad H1
 U 1 1 5DD609E4
-P 4000 4900
-F 0 "H1" H 4100 4946 50  0000 L CNN
-F 1 "MountingHole" H 4100 4855 50  0000 L CNN
-F 2 "" H 4000 4900 50  0001 C CNN
-F 3 "~" H 4000 4900 50  0001 C CNN
-	1    4000 4900
+P 4000 4820
+F 0 "H1" H 4100 4869 50  0000 L CNN
+F 1 "MountingHole" H 4100 4778 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 4000 4820 50  0001 C CNN
+F 3 "~" H 4000 4820 50  0001 C CNN
+	1    4000 4820
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
+L Mechanical:MountingHole_Pad H4
 U 1 1 5DD61216
-P 4740 5100
-F 0 "H4" H 4840 5146 50  0000 L CNN
-F 1 "MountingHole" H 4840 5055 50  0000 L CNN
-F 2 "" H 4740 5100 50  0001 C CNN
-F 3 "~" H 4740 5100 50  0001 C CNN
-	1    4740 5100
+P 4740 5270
+F 0 "H4" H 4840 5319 50  0000 L CNN
+F 1 "MountingHole" H 4840 5228 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 4740 5270 50  0001 C CNN
+F 3 "~" H 4740 5270 50  0001 C CNN
+	1    4740 5270
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole_Pad H2
 U 1 1 5DD6158B
-P 4740 4910
-F 0 "H2" H 4840 4956 50  0000 L CNN
-F 1 "MountingHole" H 4840 4865 50  0000 L CNN
-F 2 "" H 4740 4910 50  0001 C CNN
-F 3 "~" H 4740 4910 50  0001 C CNN
-	1    4740 4910
+P 4740 4810
+F 0 "H2" H 4840 4859 50  0000 L CNN
+F 1 "MountingHole" H 4840 4768 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 4740 4810 50  0001 C CNN
+F 3 "~" H 4740 4810 50  0001 C CNN
+	1    4740 4810
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Mechanical:MountingHole_Pad H3
 U 1 1 5DD62790
-P 4000 5110
-F 0 "H3" H 4100 5156 50  0000 L CNN
-F 1 "MountingHole" H 4100 5065 50  0000 L CNN
-F 2 "" H 4000 5110 50  0001 C CNN
-F 3 "~" H 4000 5110 50  0001 C CNN
-	1    4000 5110
+P 4000 5280
+F 0 "H3" H 4100 5329 50  0000 L CNN
+F 1 "MountingHole" H 4100 5238 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.2mm_M2_Pad" H 4000 5280 50  0001 C CNN
+F 3 "~" H 4000 5280 50  0001 C CNN
+	1    4000 5280
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1128,4 +1128,56 @@ Wire Notes Line
 	470  5600 5520 5600
 Text Notes 4020 4590 0    173  ~ 0
 Mounting\nHoles
+$Comp
+L power:GND #PWR?
+U 1 1 5DDE94B5
+P 4000 4950
+F 0 "#PWR?" H 4000 4700 50  0001 C CNN
+F 1 "GND" H 4130 4900 50  0000 C CNN
+F 2 "" H 4000 4950 50  0001 C CNN
+F 3 "" H 4000 4950 50  0001 C CNN
+	1    4000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4950 4000 4920
+$Comp
+L power:GND #PWR?
+U 1 1 5DE03493
+P 4740 4940
+F 0 "#PWR?" H 4740 4690 50  0001 C CNN
+F 1 "GND" H 4870 4890 50  0000 C CNN
+F 2 "" H 4740 4940 50  0001 C CNN
+F 3 "" H 4740 4940 50  0001 C CNN
+	1    4740 4940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4740 4940 4740 4910
+$Comp
+L power:GND #PWR?
+U 1 1 5DE0C81A
+P 4740 5410
+F 0 "#PWR?" H 4740 5160 50  0001 C CNN
+F 1 "GND" H 4870 5360 50  0000 C CNN
+F 2 "" H 4740 5410 50  0001 C CNN
+F 3 "" H 4740 5410 50  0001 C CNN
+	1    4740 5410
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4740 5410 4740 5370
+$Comp
+L power:GND #PWR?
+U 1 1 5DE15A51
+P 4000 5410
+F 0 "#PWR?" H 4000 5160 50  0001 C CNN
+F 1 "GND" H 4130 5360 50  0000 C CNN
+F 2 "" H 4000 5410 50  0001 C CNN
+F 3 "" H 4000 5410 50  0001 C CNN
+	1    4000 5410
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5410 4000 5380
 $EndSCHEMATC
